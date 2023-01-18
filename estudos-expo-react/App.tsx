@@ -1,19 +1,18 @@
 import React from "react";
-import { View, Text, SafeAreaView, StyleSheet, StatusBar} from "react-native";
+import { View, StyleSheet, StatusBar} from "react-native";
+import Primeiro from "./src/components/Primeiro";
 
 export default function App(){
+
   return(
-    <SafeAreaView style={styles.container}>
-      <View>
-        <Text>Primeiro Componente</Text>
-      </View>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <Primeiro/>
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-      marginTop:StatusBar.currentHeight
+  container:{
+      marginTop: StatusBar.currentHeight? StatusBar.currentHeight:30,
   },
-
 })
