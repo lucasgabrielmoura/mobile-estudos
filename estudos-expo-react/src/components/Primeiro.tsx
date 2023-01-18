@@ -1,21 +1,15 @@
 import React from "react"
 import { View, Text, StyleSheet, StatusBar } from "react-native";
 
+import estiloGlobal from "../styles/estilo";
+
 
 
 export default function Primeiro(){
+    console.warn("Olá!")
     return(
         <View>
-            <Text style={styles.titulo}>Primeiro Componentes!</Text>
-            <Text>{1+3}</Text>
+            <Text style={estiloGlobal.global}>Primeiro Componentes!</Text>
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    titulo:{
-        fontSize: 50,  
-        textAlign: 'center',
-        color: '#345cab',
-    },
-})
