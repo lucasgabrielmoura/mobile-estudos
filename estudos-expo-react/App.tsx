@@ -4,6 +4,7 @@ import { View, StyleSheet, StatusBar} from "react-native";
 /* import Primeiro from "./src/components/Primeiro";
 import CompDefault ,{ Comp2, Comp3 } from "./src/components/Multi"; //puxando como item específico e o default  */ 
 import MinMax from "./src/components/MinMax";
+import RandomActivitie from "./src/components/TarefaRandomNumber";
 
 export default function App(){
 
@@ -16,9 +17,14 @@ export default function App(){
       {/* <Primeiro/>
       <CompDefault />
       <Comp3 />
-      <Comp2 /> */}
+      <Comp2 />
       <MinMax min={3} max={30} />
       <MinMax min={1} max={10} />
+      */}
+      <RandomActivitie min={5} max={20} />
+      <RandomActivitie min={5} max={20} />
+      <RandomActivitie min={5} max={20} />
+      <RandomActivitie min={5} max={15} />
     </View>
   )
 }
