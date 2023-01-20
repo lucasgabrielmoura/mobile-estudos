@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import { View, StyleSheet, StatusBar} from "react-native";
+import Botao from "./src/components/Botao";
+import Count from "./src/components/Contador";
 
 /* import Primeiro from "./src/components/Primeiro";
 import CompDefault ,{ Comp2, Comp3 } from "./src/components/Multi"; //puxando como item específico e o default  */ 
 import MinMax from "./src/components/MinMax";
 import RandomActivitie from "./src/components/TarefaRandomNumber";
+import TituloFrag from "./src/components/TituloFragment";
 
 export default function App(){
 
@@ -20,11 +23,14 @@ export default function App(){
       <Comp2 />
       <MinMax min={3} max={30} />
       <MinMax min={1} max={10} />
-      */}
       <RandomActivitie min={5} max={20} />
       <RandomActivitie min={5} max={20} />
       <RandomActivitie min={5} max={20} />
       <RandomActivitie min={5} max={15} />
+      <TituloFrag titulo="Cadastro" subtitulo="Tela de Cadastro" />
+      <Botao/>
+      */}
+      <Count />
     </View>
   )
 }
