@@ -10,6 +10,7 @@ import CompDefault ,{ Comp2, Comp3 } from "./src/components/Multi"; //puxando co
 import MinMax from "./src/components/MinMax";
 import RandomActivitie from "./src/components/TarefaRandomNumber";
 import TituloFrag from "./src/components/TituloFragment";
+import ContV2 from "./src/components/contador/ContadorV2";
 
 export default function App(){
 
@@ -32,8 +33,9 @@ export default function App(){
       <TituloFrag titulo="Cadastro" subtitulo="Tela de Cadastro" />
       <Botao/>
       <Count />
-      */}
       <Pai2/>
+      */}
+      <ContV2/>
     </View>
   )
 }
