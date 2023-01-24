@@ -11,6 +11,7 @@ import MinMax from "./src/components/MinMax";
 import RandomActivitie from "./src/components/TarefaRandomNumber";
 import TituloFrag from "./src/components/TituloFragment";
 import ContV2 from "./src/components/contador/ContadorV2";
+import Diferenciar from "./src/components/Diferenciar";
 
 export default function App(){
 
@@ -34,8 +35,9 @@ export default function App(){
       <Botao/>
       <Count />
       <Pai2/>
-      */}
       <ContV2/>
+      */}
+      <Diferenciar />
     </View>
   )
 }
