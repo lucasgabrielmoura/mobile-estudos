@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
-import { View, StyleSheet, StatusBar} from "react-native";
+import { View, StyleSheet, StatusBar, Text} from "react-native";
 import Botao from "./src/components/Botao";
+import Pai from "./src/components/direta/Pai";
+import Pai2 from "./src/components/indireta/Pai2";
 import Count from "./src/components/Contador";
 
 /* import Primeiro from "./src/components/Primeiro";
@@ -29,8 +31,9 @@ export default function App(){
       <RandomActivitie min={5} max={15} />
       <TituloFrag titulo="Cadastro" subtitulo="Tela de Cadastro" />
       <Botao/>
-      */}
       <Count />
+      */}
+      <Pai2/>
     </View>
   )
 }
