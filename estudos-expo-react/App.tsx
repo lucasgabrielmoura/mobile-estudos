@@ -13,6 +13,9 @@ import TituloFrag from "./src/components/TituloFragment";
 import ContV2 from "./src/components/contador/ContadorV2";
 import DiferenciarSO from "./src/components/Diferenciar";
 import DiferenciarParImpar from "./src/components/difParImpar";
+import Familia from "./src/components/relacao/Familia";
+import Membro from "./src/components/relacao/Membro";
+import UsuarioLogado from "./src/components/UsuarioLogado";
 
 export default function App(){
 
@@ -38,8 +41,20 @@ export default function App(){
       <Pai2/>
       <ContV2/>
       <DiferenciarSO />
-      */}
       <DiferenciarParImpar numero={1}/>
+      <Familia>
+        <Membro nome="Flavio" sobrenome="Arruda" />
+        <Membro nome="Carlos" sobrenome="Arruda" />
+      </Familia>
+      <Familia>
+        <Membro nome="Juradir" sobrenome="Silva" />
+        <Membro nome="José" sobrenome="Silva" />
+      </Familia>
+      <UsuarioLogado nome="lucas" email="lucas@gmail.com"/>
+      <UsuarioLogado nome="lucas"/> //não funciona
+      <UsuarioLogado email="lucas@gmail.com"/> //não funciona
+      */}
+      
     </View>
   )
 }
