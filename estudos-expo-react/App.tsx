@@ -12,6 +12,7 @@ import RandomActivitie from "./src/components/TarefaRandomNumber";
 import TituloFrag from "./src/components/TituloFragment";
 import ContV2 from "./src/components/contador/ContadorV2";
 import DiferenciarSO from "./src/components/Diferenciar";
+import DiferenciarParImpar from "./src/components/difParImpar";
 
 export default function App(){
 
@@ -36,8 +37,9 @@ export default function App(){
       <Count />
       <Pai2/>
       <ContV2/>
-      */}
       <DiferenciarSO />
+      */}
+      <DiferenciarParImpar numero={1}/>
     </View>
   )
 }
