@@ -18,6 +18,7 @@ import Membro from "./src/components/relacao/Membro";
 import UsuarioLogado from "./src/components/UsuarioLogado";
 import Produtos from "./src/components/produtos/Produtos";
 import ProdutosV2 from "./src/components/produtos/ProdutosV2";
+import DigiteSeuNome from "./src/components/TypeSeuNomeControle";
 
 export default function App(){
 
@@ -56,8 +57,11 @@ export default function App(){
       <UsuarioLogado nome="lucas"/> //não funciona por conta de props vazios
       <UsuarioLogado email="lucas@gmail.com"/> //não funciona por conta de props vazios
       <Produtos />
-      */}
       <ProdutosV2 />
+      <DigiteSeuNome />
+      */}
+      
+
     </View>
   )
 }
