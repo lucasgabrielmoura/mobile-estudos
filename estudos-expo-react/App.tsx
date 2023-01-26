@@ -16,6 +16,8 @@ import DiferenciarParImpar from "./src/components/difParImpar";
 import Familia from "./src/components/relacao/Familia";
 import Membro from "./src/components/relacao/Membro";
 import UsuarioLogado from "./src/components/UsuarioLogado";
+import Produtos from "./src/components/produtos/Produtos";
+import ProdutosV2 from "./src/components/produtos/ProdutosV2";
 
 export default function App(){
 
@@ -50,11 +52,12 @@ export default function App(){
         <Membro nome="Juradir" sobrenome="Silva" />
         <Membro nome="José" sobrenome="Silva" />
       </Familia>
-      <UsuarioLogado nome="lucas" email="lucas@gmail.com"/>
-      <UsuarioLogado nome="lucas"/> //não funciona
-      <UsuarioLogado email="lucas@gmail.com"/> //não funciona
+      <UsuarioLogado nome="lucas" email="lucas@gmail.com"/> // funciona
+      <UsuarioLogado nome="lucas"/> //não funciona por conta de props vazios
+      <UsuarioLogado email="lucas@gmail.com"/> //não funciona por conta de props vazios
+      <Produtos />
       */}
-      
+      <ProdutosV2 />
     </View>
   )
 }
@@ -62,8 +65,6 @@ export default function App(){
 const styles = StyleSheet.create({
   container:{
       marginTop: StatusBar.currentHeight? StatusBar.currentHeight:30,
-      paddingLeft: 150,
-      paddingRight: 150,
       flex: 1,
       justifyContent: "center",
       alignItems: "center",
