@@ -4,7 +4,6 @@ import Botao from "./src/components/Botao";
 import Pai from "./src/components/direta/Pai";
 import Pai2 from "./src/components/indireta/Pai2";
 import Count from "./src/components/Contador";
-
 /* import Primeiro from "./src/components/Primeiro";
 import CompDefault ,{ Comp2, Comp3 } from "./src/components/Multi"; //puxando como item específico e o default  */ 
 import MinMax from "./src/components/MinMax";
@@ -19,6 +18,7 @@ import UsuarioLogado from "./src/components/UsuarioLogado";
 import Produtos from "./src/components/produtos/Produtos";
 import ProdutosV2 from "./src/components/produtos/ProdutosV2";
 import DigiteSeuNome from "./src/components/TypeSeuNomeControle";
+import Quadrado from "./src/components/layout/Quadrado";
 
 export default function App(){
 
@@ -60,7 +60,12 @@ export default function App(){
       <ProdutosV2 />
       <DigiteSeuNome />
       */}
-      
+      <Quadrado letra="G"/>
+      <Quadrado letra="A" color="#342cab"/>
+      <Quadrado letra="B" color="#993399"/>
+      <Quadrado letra="I" color="#400023"/>
+      <Quadrado letra="❦" color="#6B0000"/>
+
 
     </View>
   )
