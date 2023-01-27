@@ -3,7 +3,8 @@ import { View, StyleSheet, Text } from "react-native"
 
 type cortipo = {
     color?: string,
-    letra: string,
+    letra?: string,
+    lado?: number,
 }
 
 export default function Quadrado(props:cortipo){
@@ -12,13 +13,12 @@ export default function Quadrado(props:cortipo){
         container:{
             alignItems: "center",
             justifyContent: "center",
-            height: 100,
-            width: 100,
+            height: props.lado || 100,
+            width: props.lado || 100,
             backgroundColor: props?.color || "#000",
-            margin: 10,
         },
         texts:{
-            fontSize: 60,
+            fontSize: props.lado || 60,
             color: "#fff"
         }
     })

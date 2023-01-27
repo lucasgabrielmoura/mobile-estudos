@@ -19,6 +19,10 @@ import Produtos from "./src/components/produtos/Produtos";
 import ProdutosV2 from "./src/components/produtos/ProdutosV2";
 import DigiteSeuNome from "./src/components/TypeSeuNomeControle";
 import Quadrado from "./src/components/layout/Quadrado";
+import FlexBoxV1 from "./src/components/layout/FlexBoxV1";
+import FlexBoxV2 from "./src/components/layout/FlexBoxV2";
+import FlexBoxV3 from "./src/components/layout/FlexBoxV3";
+import FlexBoxV4 from "./src/components/layout/FlexBoxV4";
 
 export default function App(){
 
@@ -59,13 +63,11 @@ export default function App(){
       <Produtos />
       <ProdutosV2 />
       <DigiteSeuNome />
+      <FlexBoxV1/>
+      <FlexBoxV2/>
+      <FlexBoxV3/>
       */}
-      <Quadrado letra="G"/>
-      <Quadrado letra="A" color="#342cab"/>
-      <Quadrado letra="B" color="#993399"/>
-      <Quadrado letra="I" color="#400023"/>
-      <Quadrado letra="❦" color="#6B0000"/>
-
+      <FlexBoxV4/>
 
     </View>
   )
@@ -73,7 +75,7 @@ export default function App(){
 
 const styles = StyleSheet.create({
   container:{
-      marginTop: StatusBar.currentHeight? StatusBar.currentHeight:30,
+      padding: StatusBar.currentHeight? StatusBar.currentHeight:30,
       flex: 1,
       justifyContent: "center",
       alignItems: "center",
