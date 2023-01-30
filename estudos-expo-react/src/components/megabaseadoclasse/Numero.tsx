@@ -16,7 +16,7 @@ export default function Numero(props:megaNumero){
             height: 50,
             borderRadius: 50,
             backgroundColor: "#000",
-            margin: 5,
+            margin: 4,
         },
         texto:{
             color:"#fff",
