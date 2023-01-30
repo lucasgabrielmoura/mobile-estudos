@@ -23,6 +23,7 @@ import FlexBoxV1 from "./src/components/layout/FlexBoxV1";
 import FlexBoxV2 from "./src/components/layout/FlexBoxV2";
 import FlexBoxV3 from "./src/components/layout/FlexBoxV3";
 import FlexBoxV4 from "./src/components/layout/FlexBoxV4";
+import Mega from "./src/components/megabaseadoclasse/Mega";
 
 export default function App(){
 
@@ -66,8 +67,9 @@ export default function App(){
       <FlexBoxV1/>
       <FlexBoxV2/>
       <FlexBoxV3/>
-      */}
       <FlexBoxV4/>
+      */}
+      <Mega qtdDeNumeros={12}/>
 
     </View>
   )
